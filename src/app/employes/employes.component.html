@@ -1,0 +1,7 @@
+<h1 class="text-danger">Liste des employés</h1>
+<table class="table table-striped">
+    <tr *ngFor="let e of employes">
+        <td>{{e.nom}}</td>
+        <td><a class="btn btn-warning" routerLink="/employes/{{e.id}}">Détails</a></td>
+    </tr>
+</table>

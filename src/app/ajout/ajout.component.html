@@ -1,0 +1,31 @@
+<h1 class="text-danger text-center">Formulaire d'ajout</h1>
+<div class="row">
+    <div class="col-3">
+        &nbsp;
+    </div>
+    <div class="col-6">
+        <form #formAjout="ngForm" (ngSubmit)="ajout()">
+            <div class="mb-3">
+                <label for="id" class="form-label">Identifiant</label>
+                <input type="number" class="form-control" id="id" name="id" [(ngModel)]="employe.id" readonly>
+            </div>
+            <div class="mb-3">
+                <label for="nom" class="form-label">Nom complet</label>
+                <input type="nom" class="form-control" id="nom" name="nom" [(ngModel)]="employe.nom">
+            </div>
+            <div class="mb-3">
+                <label for="dateEmbauche" class="form-label">Date d'embauche</label>
+                <input type="date" class="form-control" id="dateEmbauche" name="dateEmbauche" [(ngModel)]="employe.dateEmbauche">
+            </div>
+            <div class="mb-3">
+                <label for="salaire" class="form-label">Salaire</label>
+                <input type="number" class="form-control" id="salaire" name="salaire" [(ngModel)]="employe.salaire">
+            </div>
+            <button type="submit" class="btn btn-primary">Ajouter</button>
+        </form>
+    </div>
+    <div class="col-3">
+        &nbsp;
+        <!-- {{employe | json}} -->
+    </div>
+</div>
